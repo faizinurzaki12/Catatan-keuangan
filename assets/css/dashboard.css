@@ -312,7 +312,7 @@ body {
         width: 100%;
         height: auto !important;
         /* overflow: visible !important; */
-        padding: 12px;
+        padding: 10px;
     }
 
     .sidebar {
@@ -324,13 +324,19 @@ body {
         padding: 10px 16px;
     }
 
+    .sidebar .brand {
+        padding: 5px 10px;
+        align-items: center;
+        font-size: 18px;
+    }
+
     .sidebar nav {
         flex-direction: row;
         margin-top: 0;
     }
 
     .sidebar nav a {
-        font-size: 14px;
+        font-size: 17px;
         padding: 6px 10px;
         border-bottom: none;
     }

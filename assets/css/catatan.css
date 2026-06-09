@@ -238,19 +238,19 @@ td {
 
     body {
         height: auto !important;
-        min-height: 100vh;
+        /* min-height: 100vh; */
         overflow-x: hidden;
     }
     .wrapper {
         height: auto !important;
         flex-direction: column;
-        overflow-x: visible !important;
+        /* overflow-x: visible !important; */
     }
     
     .main {
         height: auto !important;
         overflow: visible !important;
-        padding: 12px;
+        padding: 10px;
     }
 
     .sidebar {
@@ -259,14 +259,19 @@ td {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 14px;
+        padding: 10px 16px;
+    }
+    .sidebar .brand {
+      padding: 5px 10px;
+      align-items: center;
+      font-size: 18px;
     }
     .sidebar nav {
         flex-direction: row;
         margin-top: 0;
     }
     .sidebar nav a {
-        font-size: 18px;
+        font-size: 17px;
         padding: 6px 10px;
         border-bottom: none;
     }
