@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,9 +9,6 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: rgb(196, 198, 196);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .wrapper {
@@ -34,7 +30,7 @@ body {
 }
 
 .sidebar .brand {
-    font-size: 14px;
+    font-size: 19px;
     font-weight: bold;
     padding: 0 16px 16px;
     color: #3DA9FC;
@@ -50,8 +46,8 @@ body {
 
 .sidebar nav a {
     display: block;
-    padding: 14px 16px;
-    font-size: 13px;
+    padding: 10px 8px;
+    font-size: 18px;
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -68,7 +64,7 @@ body {
 .sidebar .logout {
     margin-top: auto;
     padding: 14px 16px;
-    font-size: 13px;
+    font-size: 22px;
     color: #e05;
     font-weight: bold;
     cursor: pointer;
@@ -104,7 +100,7 @@ body {
     color: #3DA9FC;
     padding: 8px 14px;
     border-radius: 8px;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .tab-wrapper {
@@ -138,6 +134,16 @@ body {
 .tab-btn.active.active-masuk {
     background: #2ecc71;
     color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .form-section {
@@ -255,6 +261,15 @@ body {
     overflow-y: auto;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
 .aktivitas-item {
     background-color: white;
     border-radius: 12px;
@@ -297,32 +312,62 @@ body {
     body {
         height: auto !important;
         min-height: 100vh;
-        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        height: auto !important;
+        flex-direction: column;
+        overflow: visible !important;
     }
 
     .main {
         width: 100%;
         height: auto !important;
-        padding: 10px;
+        padding: 12px;
+        gap: 12px;
+        overflow-x: hidden;
     }
 
     .sidebar {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 16px;
+        display: none !important;
     }
 
-    .sidebar .brand {
-        padding: 5px 10px;
-        align-items: center;
+    .sidebar nav a {
+        font-size: 18px;
+        padding: 6px 10px;
+        border-bottom: none;
+    }
+
+    .card-container {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        gap: 12px !important;
+        padding: 4px 4px 16px 4px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card-aktivitas {
+        flex: 0 0 75% !important;
+        min-width: 78% !important;
+        scroll-snap-align: center;
+        height: auto !important;
+        max-height: 340px;
+        padding: 14px !important;
+        overflow-y: auto;
+    }
+
+    .item-left .item-title {
         font-size: 18px;
     }
 
-    .sidebar nav {
-        flex-direction: row;
-        margin-top: 0;
+    .item-left .item-time {
+        font-size: 18px;
+    }
+
+    .item-left .item-price {
+        font-size: 18px;
     }
 }

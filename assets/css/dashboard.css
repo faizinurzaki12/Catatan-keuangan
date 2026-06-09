@@ -52,7 +52,7 @@ body {
 .sidebar nav a {
     display: block;
     padding: 10px 8px;
-    font-size: 22px;
+    font-size: 18px;
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -92,7 +92,7 @@ body {
 .page-title {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #0d578f;
     padding: 8px 14px;
@@ -170,7 +170,7 @@ body {
 }
 
 .transaksi-box h3 {
-    font-size: 13px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
 }
@@ -190,7 +190,7 @@ body {
 
 .transaksi-item .nama {
     flex: 1;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .transaksi-item .nominal-masuk {
@@ -279,13 +279,14 @@ body {
 }
 
 /* buat responsif */
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .bottom-row {
         display: flex;
         flex-direction: column;
         gap: 12px;
         align-items: stretch;
     }
+
     .transaksi-box {
         flex: 1.5;
     }
@@ -302,6 +303,7 @@ body {
         min-height: 100vh;
         overflow-x: hidden;
     }
+
     .wrapper {
         height: auto !important;
         flex-direction: column;
@@ -326,7 +328,18 @@ body {
     .sidebar .brand {
         padding: 5px 10px;
         align-items: center;
-        font-size: 18px;
+        font-size: 19px;
+    }
+
+    .page-title {
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        font-size: 20px;
+        font-weight: bold;
+        color: #0d578f;
+        padding: 8px 14px;
+        border-radius: 8px;
+        /* width: fit-content; */
     }
 
     .sidebar nav {
@@ -337,7 +350,7 @@ body {
     }
 
     .sidebar nav a {
-        font-size: 17px;
+        font-size: 18px;
         padding: 6px 10px;
         border-bottom: none;
     }
@@ -359,15 +372,18 @@ body {
         flex-direction: column;
         gap: 12px;
     }
+
     .bottom-row {
         flex-direction: column !important;
         width: 100%;
         gap: 16px;
     }
+
     .transaksi-box,
     .right-col {
         width: 100% !important;
         flex: 1;
+        font-size: 18px;
     }
 }
 
